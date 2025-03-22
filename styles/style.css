@@ -1,0 +1,219 @@
+body{
+    display: flex;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    align-items: center;
+    display: flex;
+    background-color: #444;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 5px 0 0 red;
+    position: fixed;
+    z-index: 10;
+}
+.header .logo{
+    margin-top: 6px;
+    margin-left: 230px;
+    margin-right: 50px;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header li{
+    padding: 0px 10px 0px 10px;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000;
+}
+.header li a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+    transition: background-color .2s ease, transform .2s ease;
+    transform-origin: center;
+}
+.header li a:hover{
+    padding: 10px;
+    background-color: #555;
+    color: red;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+.header .search{
+    color: red;
+    margin-left: 680px;
+    transition: transform .2s ease;
+}
+.header .search:hover{
+    transform: scale(1.2);
+}
+.ultimos{
+    height: 360px;
+    display: flex;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 150px;
+}
+.direita{
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.direita img{
+    transition: transform .5s ease;
+    
+}
+.direita img:hover{
+    transform: scale(1.2);
+}
+.direita .txt{
+    font-size: 14px;
+    width: 450px;
+    position: absolute;
+    top: 78%;
+    margin-left: 1px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    color: white;
+    text-shadow:1px 1px 1px #000;
+    background-color: rgba(0, 0, 0, 0.767);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.767);
+}
+.direita .txt h3{
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.esquerda{
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.esquerda img{
+    transition: transform .5s ease;
+}
+.esquerda img:hover{
+    transform: scale(1.2);
+}
+.esquerda .txt{
+    font-size: 14px;
+    width: 380px;
+    position: absolute;
+    top: 78%;
+    margin-left: 1px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    color: white;
+    text-shadow:1px 1px 1px #000;
+    background-color: rgba(0, 0, 0, 0.767);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.767);
+}
+.esquerda .txt h3{
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.noticias{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 0;
+    justify-content: space-between;
+    position: absolute;
+}
+.noticias li{
+    position: relative;
+}
+.title{
+    margin-left: 350px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.analises{
+    width: 20%;
+    margin-left: 70%;
+}
+.analises .inv{
+    color: white;
+}
+.analises ul{
+    margin-top: 300px;
+    list-style: none;
+}
+.analises li{
+    margin-left: 22px;
+    overflow: hidden;
+    width: 150px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.analises .txt{
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding-left: 10px;
+    margin-top: 200px;
+    width: 100px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgba(0, 0, 0, 0.767);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.767);
+    z-index: 2;
+    border-radius: 20px;
+    pointer-events: none;
+}
+.analises img{
+    width: 150px;
+    height: 300px;
+    transition: transform .2s ease;
+}
+.analises img:hover{
+    transform: scale(1.2);
+}
+.pagina{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.pagina-titulo{
+    margin-bottom: 220px;
+    position: absolute;
+}
+.pagina-desc{
+    margin-left: 330px;
+    margin-bottom: 100px;
+}
+.pagina-desc h4{
+    margin-bottom: 10px;
+}
+.pagina-image{
+    position: absolute;
+    overflow: hidden;
+    width: 320px;
+    border-radius: 10px;
+}
+.pagina img{
+    width: 320px;
+    height: 180px;
+    transition: transform .3s ease;
+}
+.pagina img:hover{
+    transform: scale(1.2);
+}
